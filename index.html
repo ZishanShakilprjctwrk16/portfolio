@@ -3,261 +3,293 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zishan Shakil | Portfolio</title>
+  <meta name="description" content="Portfolio of Zishan Shakil Dipto, a CSE undergraduate at United International University building practical AI, NLP, computer vision, frontend, and SQA projects." />
+  <title>Zishan Shakil Dipto | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
-  <header class="header">
-    <nav class="nav container">
-      <a href="#" class="logo">Zishan<span>.</span></a>
-
-      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">Zishan Shakil</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="#focus">Focus Areas</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero container">
-    <div class="hero-text">
-      <p class="badge">Computer Science Undergraduate</p>
-      <h1>Hi, I am <span>Zishan Shakil</span></h1>
-      <h2>AI Engineering • ML Engineering • Frontend Development • SQA</h2>
-      <p>
-        I am a Computer Science undergraduate from United International University.
-        I am interested in AI engineering, machine learning engineering, software quality
-        assurance, frontend development, SQL, and database management.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn primary">View Projects</a>
-        <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank" class="btn secondary">GitHub</a>
-        <a href="https://huggingface.co/ElMETRICO" target="_blank" class="btn secondary">Hugging Face</a>
-      </div>
-    </div>
-
-    <div class="hero-card">
-      <div class="profile-circle">ZS</div>
-      <h3>Zishan Shakil</h3>
-      <p>CS Undergrad • UIU</p>
-      <div class="mini-tags">
-        <span>AI</span>
-        <span>ML</span>
-        <span>SQA</span>
-        <span>Frontend</span>
-        <span>SQL</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="about-text">
-        I am a Computer Science undergraduate with a strong interest in building practical
-        and reliable software solutions. My focus areas include Artificial Intelligence,
-        Machine Learning, Software Quality Assurance, SQL, Database Management, and Frontend
-        Development. I enjoy working on academic and personal projects that solve real-world
-        problems and help me improve as a developer.
-      </p>
-    </div>
-  </section>
-
-  <!-- Focus Areas -->
-  <section class="section alt" id="focus">
-    <div class="container">
-      <h2 class="section-title">Focus Areas</h2>
-
-      <div class="focus-grid">
-        <div class="focus-card">
-          <h3>AI Engineering</h3>
-          <p>Building AI-based systems and applying intelligent solutions to practical problems.</p>
-        </div>
-
-        <div class="focus-card">
-          <h3>ML Engineering</h3>
-          <p>Training, evaluating, and deploying machine learning models for real-world use cases.</p>
-        </div>
-
-        <div class="focus-card">
-          <h3>Software Quality Assurance</h3>
-          <p>Testing software systems, identifying bugs, improving quality, and ensuring reliability.</p>
-        </div>
-
-        <div class="focus-card">
-          <h3>Frontend Development</h3>
-          <p>Designing responsive, clean, and user-friendly web interfaces.</p>
-        </div>
-
-        <div class="focus-card">
-          <h3>SQL & Database Management</h3>
-          <p>Writing SQL queries, managing databases, and analyzing structured data.</p>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">CSE Undergraduate • United International University</p>
+        <h1>Building practical AI, NLP, and Computer Vision projects.</h1>
+        <p class="hero-text">
+          I am a fresher-focused developer who enjoys turning academic learning into working prototypes.
+          My current work includes low-resource language processing, image classification, frontend interfaces,
+          and software testing practices.
+        </p>
+        <div class="hero-actions" aria-label="Profile links">
+          <a href="#projects" class="btn primary">View selected work</a>
+          <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank" rel="noopener noreferrer" class="btn secondary">GitHub</a>
+          <a href="https://www.linkedin.com/in/zishan-shakil-426143377/" target="_blank" rel="noopener noreferrer" class="btn secondary">LinkedIn</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Skills -->
-  <section class="section" id="skills">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-
-      <div class="skills-grid">
-        <div class="skill-card">
-          <h3>Programming</h3>
-          <p>Python, Java, C/C++, JavaScript, SQL</p>
+      <aside class="profile-card" aria-label="Profile summary">
+        <div class="avatar" aria-hidden="true">ZS</div>
+        <h2>Zishan Shakil Dipto</h2>
+        <p>Aspiring AI/ML Developer</p>
+        <div class="tag-list">
+          <span>Python</span>
+          <span>NLP</span>
+          <span>Computer Vision</span>
+          <span>Frontend</span>
+          <span>SQA</span>
         </div>
-
-        <div class="skill-card">
-          <h3>Frontend Development</h3>
-          <p>HTML, CSS, JavaScript, Responsive Web Design</p>
+        <div class="card-note">
+          <strong>Current focus:</strong> low-resource language technology and image classification projects.
         </div>
+      </aside>
+    </section>
 
-        <div class="skill-card">
-          <h3>AI / ML</h3>
-          <p>Machine Learning, Deep Learning, NLP, Image Classification, Model Deployment</p>
+    <section class="stats-section">
+      <div class="container stats-grid">
+        <div>
+          <span class="stat-label">Education</span>
+          <strong>BSc in CSE</strong>
         </div>
-
-        <div class="skill-card">
-          <h3>Database</h3>
-          <p>MySQL, SQL Queries, Database Design, Database Management</p>
+        <div>
+          <span class="stat-label">Project areas</span>
+          <strong>NLP • CV • SQA</strong>
         </div>
-
-        <div class="skill-card">
-          <h3>Software Quality Assurance</h3>
-          <p>Manual Testing, Test Cases, Bug Reporting, Software Reliability</p>
+        <div>
+          <span class="stat-label">Main tools</span>
+          <strong>Python • Scikit-learn • Colab</strong>
         </div>
-
-        <div class="skill-card">
-          <h3>Tools</h3>
-          <p>GitHub, VS Code, Google Colab, Jupyter Notebook, Hugging Face</p>
+        <div>
+          <span class="stat-label">Goal</span>
+          <strong>Internship / entry-level role</strong>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projects -->
-  <section class="section alt" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-
-      <div class="projects-grid">
-
-        <article class="project-card">
-          <h3>CrossTalk AI</h3>
-          <p>
-            A low-resource ethnic language identification and translation support system
-            for Bangladeshi languages such as Chakma, Marma, Kokborok, Santali, Garo,
-            Khasi, Mru, Mundari, and Rohingyalish/Rakhine.
-          </p>
-          <div class="tech">
-            <span>Python</span>
-            <span>NLP</span>
-            <span>Machine Learning</span>
-            <span>Hugging Face</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank">GitHub</a>
-            <a href="https://huggingface.co/ElMETRICO" target="_blank">Hugging Face</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Pet Image Classification with Unknown Detection</h3>
-          <p>
-            A deep learning project that classifies pets and detects unknown animals
-            to reduce wrong predictions in look-alike animal classes.
-          </p>
-          <div class="tech">
-            <span>Python</span>
-            <span>TensorFlow</span>
-            <span>Keras</span>
-            <span>MobileNetV2</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank">GitHub</a>
-            <a href="https://huggingface.co/ElMETRICO" target="_blank">Demo</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Cybersecurity Tools Launcher</h3>
-          <p>
-            A Windows-based security tool launcher that combines tools like Nmap and
-            malware scanning utilities into a simple user interface.
-          </p>
-          <div class="tech">
-            <span>Python</span>
-            <span>Tkinter</span>
-            <span>Nmap</span>
-            <span>Windows</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank">GitHub</a>
-          </div>
-        </article>
-
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="section-kicker">About</p>
+        <h2 class="section-title">Professional, but honest about where I am.</h2>
+        <p class="lead">
+          I am a Computer Science and Engineering undergraduate at United International University. As a fresher,
+          I am focused on building strong fundamentals and applying them through real academic and personal projects.
+          I prefer clean documentation, simple interfaces, clear testing, and projects that show what I actually built.
+        </p>
+        <p class="lead">
+          My strongest interests are Artificial Intelligence, Natural Language Processing, Computer Vision, Frontend
+          Development, and Software Quality Assurance. I am still learning, but I try to improve every project step by step
+          instead of only making it look good on the surface.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Education -->
-  <section class="section" id="education">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-
-      <div class="education-timeline">
-        <div class="education-card">
-          <h3>BSc in Computer Science and Engineering</h3>
-          <p>United International University</p>
-          <p class="muted">Undergraduate Pass Year: 2026</p>
-        </div>
-
-        <div class="education-card">
-          <h3>Higher Secondary Certificate</h3>
-          <p>Birshrestha Munshi Abdur Rouf College</p>
-        </div>
-
-        <div class="education-card">
-          <h3>Secondary School Certificate</h3>
-          <p>Motijheel Ideal School And College</p>
+    <section class="section muted-bg" id="focus">
+      <div class="container">
+        <p class="section-kicker">Working style</p>
+        <h2 class="section-title center">How I approach projects</h2>
+        <div class="focus-grid">
+          <article class="info-card">
+            <span class="card-number">01</span>
+            <h3>Build a working prototype first</h3>
+            <p>I focus on making the core idea work before adding extra design or unnecessary features.</p>
+          </article>
+          <article class="info-card">
+            <span class="card-number">02</span>
+            <h3>Document the process</h3>
+            <p>I explain the problem, dataset, tools, model choice, limitations, and next improvements clearly.</p>
+          </article>
+          <article class="info-card">
+            <span class="card-number">03</span>
+            <h3>Think like a tester</h3>
+            <p>I check edge cases, wrong inputs, model mistakes, and UI issues so projects become more reliable.</p>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section class="section alt" id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-kicker">Selected work</p>
+        <h2 class="section-title center">Projects with clear proof of work</h2>
 
-      <div class="contact-box">
-        <p>Interested in my work or want to connect?</p>
+        <div class="projects-grid">
+          <article class="project-card featured">
+            <div class="project-topline">
+              <span>Final-year / NLP</span>
+              <span>Prototype</span>
+            </div>
+            <h3>CrossTalk AI</h3>
+            <p class="project-summary">
+              A low-resource ethnic language identification and translation retrieval system for Bangladeshi ethnic languages.
+            </p>
+            <div class="project-details">
+              <p><strong>Problem:</strong> Many local ethnic languages have limited digital resources and small public datasets.</p>
+              <p><strong>My work:</strong> Organized word-level datasets, tested language classification, built translation lookup logic, and prepared demo documentation.</p>
+              <p><strong>Languages:</strong> Chakma, Marma, Kokborok, Santali, Garo, Khasi, Mru, Mundari, and Rakhine/Rohingyalish.</p>
+            </div>
+            <div class="tech-list">
+              <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>NLP</span><span>Hugging Face</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://huggingface.co/ElMETRICO" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Computer Vision</span>
+              <span>Experiment</span>
+            </div>
+            <h3>Pet Species Classifier with Unknown Detection</h3>
+            <p class="project-summary">
+              A MobileNetV2-based image classifier designed to reduce wrong predictions when an animal is outside the trained classes.
+            </p>
+            <div class="project-details">
+              <p><strong>Classes:</strong> dog, cat, bird, rabbit, goldfish, parrot, and unknown.</p>
+              <p><strong>My work:</strong> Dataset splitting, training, fine-tuning, testing, and checking mistakes on look-alike animal images.</p>
+            </div>
+            <div class="tech-list">
+              <span>Python</span><span>PyTorch</span><span>MobileNetV2</span><span>Google Colab</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://huggingface.co/ElMETRICO" target="_blank" rel="noopener noreferrer">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Computer Vision</span>
+              <span>Research practice</span>
+            </div>
+            <h3>Dog Skin Disease Classification</h3>
+            <p class="project-summary">
+              A small-scale deep learning experiment for classifying healthy and diseased dog skin images.
+            </p>
+            <div class="project-details">
+              <p><strong>Goal:</strong> Compare model behavior on a limited dataset and understand class-wise prediction issues.</p>
+              <p><strong>My work:</strong> Prepared train/validation/test splits, trained CNN models, compared results, and reviewed misclassifications.</p>
+            </div>
+            <div class="tech-list">
+              <span>Python</span><span>ResNet18</span><span>EfficientNet</span><span>Deep Learning</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <span>Security / GUI</span>
+              <span>Academic project</span>
+            </div>
+            <h3>Cybersecurity Tools Launcher</h3>
+            <p class="project-summary">
+              A Windows-based defensive security launcher that groups common lab tools into a simple interface.
+            </p>
+            <div class="project-details">
+              <p><strong>Goal:</strong> Make security lab tools easier to run from one GUI during academic demonstrations.</p>
+              <p><strong>My work:</strong> Built the interface layout, connected tool commands, improved console output, and prepared report/presentation materials.</p>
+            </div>
+            <div class="tech-list">
+              <span>Python</span><span>Tkinter</span><span>Nmap</span><span>Windows</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted-bg" id="skills">
+      <div class="container">
+        <p class="section-kicker">Skills</p>
+        <h2 class="section-title center">Tools I use while building projects</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Python, Java, C/C++, JavaScript, SQL</p>
+          </article>
+          <article class="skill-card">
+            <h3>AI / ML</h3>
+            <p>Machine Learning, Deep Learning, NLP, Computer Vision, Image Classification</p>
+          </article>
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, responsive layout, clean UI structure</p>
+          </article>
+          <article class="skill-card">
+            <h3>SQA</h3>
+            <p>Manual testing, test cases, bug reporting, edge-case checking</p>
+          </article>
+          <article class="skill-card">
+            <h3>Data & Database</h3>
+            <p>Pandas, dataset organization, SQL queries, basic database management</p>
+          </article>
+          <article class="skill-card">
+            <h3>Tools</h3>
+            <p>GitHub, VS Code, Google Colab, Jupyter Notebook, Hugging Face</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container narrow">
+        <p class="section-kicker">Education</p>
+        <h2 class="section-title">Academic background</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <h3>BSc in Computer Science and Engineering</h3>
+            <p>United International University</p>
+            <span>Expected Graduation: 2026</span>
+          </article>
+          <article class="timeline-item">
+            <h3>Higher Secondary Certificate</h3>
+            <p>Birshrestha Munshi Abdur Rouf College</p>
+          </article>
+          <article class="timeline-item">
+            <h3>Secondary School Certificate</h3>
+            <p>Motijheel Ideal School and College</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container narrow center-text">
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">Let’s connect</h2>
+        <p class="lead">
+          I am open to internships, entry-level opportunities, academic collaboration, and feedback on my projects.
+        </p>
         <div class="contact-links">
-          <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank">GitHub</a>
-          <a href="https://huggingface.co/ElMETRICO" target="_blank">Hugging Face</a>
-          <a href="https://www.linkedin.com/in/zishan-shakil-426143377/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/ZishanShakilprjctwrk16" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://huggingface.co/ElMETRICO" target="_blank" rel="noopener noreferrer">Hugging Face</a>
+          <a href="https://www.linkedin.com/in/zishan-shakil-426143377/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2026 Zishan Shakil. All rights reserved.</p>
+    <p>© 2026 Zishan Shakil Dipto. Built with HTML, CSS, and JavaScript.</p>
   </footer>
 
   <script src="script.js"></script>
